@@ -15,15 +15,10 @@ Uses the AlphaVantage TIME_SERIES_DAILY endpoint to download daily historical pr
 * Fills missing values with forward/backward fill
 
 ### Technical Indicators Included
-
-**The pipeline automatically adds:**
-```
-Category	Indicators
-Returns	Daily % returns
-Volatility	30-day, 60-day rolling volatility
-SMA	20, 50, 200 period simple moving averages
-EMA	20, 50 period exponential moving averages
-```
+* Daily returns
+* 30-day & 60-day volatility
+* SMA (20, 50, 200)
+* EMA (20, 50)
 
 ### Excel Report
 Generates a clean Excel file:
