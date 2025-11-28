@@ -58,11 +58,11 @@ python -m venv .venv
 ```bash
 .venv\Scripts\activate
 ```
-#### Mac/Linux:
+##### Mac/Linux:
 ```bash
 source .venv/bin/activate
 ```
-### 4. Install dependencies
+#### 4. Install dependencies
 ```bash
 pip install pandas requests xlsxwriter
 ```
