@@ -14,6 +14,17 @@ Uses the AlphaVantage TIME_SERIES_DAILY endpoint to download daily historical pr
 * Removes invalid rows
 * Fills missing values with forward/backward fill
 
+### Technical Indicators Included
+
+** The pipeline automatically adds: **
+
+Category	Indicators
+Returns	Daily % returns
+Volatility	30-day, 60-day rolling volatility
+SMA	20, 50, 200 period simple moving averages
+EMA	20, 50 period exponential moving averages
+
+
 ### Excel Report
 Generates a clean Excel file:
 ```
@@ -85,11 +96,11 @@ Done! Pipeline completed successfully.
 * xlsxwriter
 
 ### How It Works
-1. main.py loads stock symbols
-2. fetch_all_stock_data downloads prices from AlphaVantage
-3. clean_df() handles missing/invalid values
-4. add_indicators() calculates SMA, EMA, volatility, etc.
-5. generate_excel_report() creates a multi-sheet Excel file
+1. 	** main.py ** loads stock symbols
+2. ** fetch_all_stock_data ** downloads prices from AlphaVantage
+3. ** clean_df() ** handles missing/invalid values
+4. ** add_indicators() ** calculates SMA, EMA, volatility, etc.
+5. ** generate_excel_report() ** creates a multi-sheet Excel file
 
 ### Contributions
 Contributions are welcome!
