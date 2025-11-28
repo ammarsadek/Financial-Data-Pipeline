@@ -3,7 +3,7 @@ import pandas as pd
 from config import API_KEY, BASE_URL
 
 def fetch_stock_data(symbol):
-    url = f"{BASE_URL}function=TIME_SERIES_DAILY_ADJUSTED&symbol={symbol}&apikey={API_KEY}"
+    url = f"{BASE_URL}function=TIME_SERIES_DAILY&symbol={symbol}&apikey={API_KEY}"
 
     response = requests.get(url)
 

@@ -8,5 +8,6 @@ def clean_df(df):
     for col in numeric_cols:
         df[col] = pd.to_numeric(df[col], errors='coerce')
 
-    df = df.fillna(method="ffill").fillna(method="bfill")
+    df = df.ffill().bfill()
+
     return df

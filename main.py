@@ -21,5 +21,5 @@ def main():
 
     print("Done! Pipeline completed successfully.")
 
-    if __name__ == "__main__":
-        main()
+if __name__ == "__main__":
+    main()

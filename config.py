@@ -1,3 +1,3 @@
-API_KEY = '5CA1PAJAE59UH4SK'
+API_KEY = 'YOUR_ALPHA_VANTAGE_API_KEY'
 BASE_URL = 'https://www.alphavantage.co/query?'
 SYMBOLS = ["AAPL", "MSFT", "GOOGL", "TSLA", "META"]
